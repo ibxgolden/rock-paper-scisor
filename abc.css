@@ -79,3 +79,15 @@ border-radius: 8px;
 padding: 0 24px;
 margin-right: 10px;
 }
+.btn_add {
+width: 30%;
+height: 40px;
+border: 1px solid #dcdce6;
+border-radius: 8px;
+background-color: #59a2ad;
+color: #fff;
+cursor: pointer;
+}
+.btn_add:hover {
+opacity: 0.9;
+}
