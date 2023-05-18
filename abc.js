@@ -10,3 +10,11 @@ var todoText = document.createTextNode(todo);
 var linkElement = document.createElement("a");
 linkElement.setAttribute("href", "#");
 var pos = todos.indexOf(todo);
+  linkElement.setAttribute("onclick", "deleteTodo(" + pos + ")");
+var linkText = document.createTextNode("done");
+linkElement.appendChild(linkText);
+todoElement.appendChild(todoText);
+todoElement.appendChild(linkElement);
+listElement.appendChild(todoElement);
+}
+}
