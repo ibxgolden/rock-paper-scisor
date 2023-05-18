@@ -26,3 +26,13 @@ inputElement.value = "";
 renderTodos();
 saveToStorage();
 }
+}
+buttonElement.onclick = addTodo;
+function deleteTodo(pos) {
+todos.splice(pos, 1);
+renderTodos();
+saveToStorage();
+}
+function saveToStorage() {
+localStorage.setItem("list_todos", JSON.stringify(todos));
+}
